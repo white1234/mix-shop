@@ -1,0 +1,20 @@
+spring:
+  cloud:
+    nacos:
+      server-addr: 192.168.1.8:8848
+      discovery:
+        server-addr: 192.168.1.8:8848
+        group: mdxGroup
+        namespace: e698803f-4896-4988-b0e3-55a7176e07b9
+      config:
+        server-addr: 192.168.1.8:8848
+        extension-configs[0]:
+          data-id: mdx-shop-user-prod.yaml
+          group: shop
+          refresh: true
+        namespace: e698803f-4896-4988-b0e3-55a7176e07b9
+        group: shop
+        file-extension: yml
+mdx-shop-user:
+  test:
+    username: prodUserName

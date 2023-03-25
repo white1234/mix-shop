@@ -1,0 +1,8 @@
+server:
+  port: 8180
+spring:
+  application:
+    name: mdx-shop-user
+  profiles:
+    active: '@spring.profiles.active@'
+
