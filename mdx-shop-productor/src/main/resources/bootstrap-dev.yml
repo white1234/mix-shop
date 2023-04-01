@@ -1,3 +1,19 @@
-mdx-shop:
-  productor:
-   id: pid-dev-1111
+spring:
+  application:
+    name: mdx-shop-productor
+  cloud:
+    nacos:
+      server-addr: 127.0.0.1:80
+      config:
+        server-addr: 127.0.0.1:80
+        extension-configs[0]:
+          data-id: mdx-shop-productor-dev.yaml
+          group: shop
+          refresh: true
+        namespace: b9c41727-0eb3-4fe3-8ecc-4c1cdb773486
+        group: shop
+        file-extension: yml
+      discovery:
+        server-addr: 127.0.0.1:80
+        group: mdx
+        namespace: b9c41727-0eb3-4fe3-8ecc-4c1cdb773486

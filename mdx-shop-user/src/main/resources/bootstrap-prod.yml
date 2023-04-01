@@ -1,4 +1,10 @@
 spring:
+  datasource:
+    type: com.alibaba.druid.pool.DruidDataSource
+    url: jdbc:mysql://localhost:3306/mdx_user?autoRec&useUnicode=true&characterEncoding=utf8&zeroDateTimeBehavior=convertToNull&useSSL=true&serverTimezone=GMT%2B8
+    driverClassName: com.mysql.cj.jdbc.Driver
+    username: root
+    password: root
   cloud:
     nacos:
       server-addr: 192.168.1.8:8848

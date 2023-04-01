@@ -1,0 +1,7 @@
+server:
+  port: 8202
+spring:
+  application:
+    name: mdx-shop-order
+  profiles:
+    active: dev

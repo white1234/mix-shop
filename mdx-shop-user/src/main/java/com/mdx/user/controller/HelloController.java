@@ -20,11 +20,10 @@ public class HelloController {
     @Value("${mdx-shop-user.test.userId}")
     private String userId;
 
-    @Value("${mdx-shop-user.test.username}")
-    private String username;
 
     @GetMapping("queryUserName")
     public String queryUserName(){
-        return userId+":"+username;
+        return userId+":ssss";
     }
+
 }

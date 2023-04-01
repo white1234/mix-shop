@@ -1,29 +1,5 @@
 server:
-  port: 8181
-spring:
-  application:
-    name: mdx-shop-productor
-  cloud:
-    nacos:
-      server-addr: 192.168.1.8:8848
-      config:
-        server-addr: 192.168.1.8:8848
-        extension-configs[0]:
-          data-id: mdx-shop-productor.yaml
-          group: shop
-          refresh: true
-        extension-configs[1]:
-          data-id: mdx-shop-productor-dev.yaml
-          group: shop
-          refresh: true
-        namespace: b9c41727-0eb3-4fe3-8ecc-4c1cdb773486
-        group: shop
-        file-extension: yml
-
-      discovery:
-        server-addr: 192.168.1.8:8848
-        group: mdxGroup
-        namespace: b9c41727-0eb3-4fe3-8ecc-4c1cdb773486
+  port: 8191
   profiles:
     active: '@spring.profiles.active@'
 
